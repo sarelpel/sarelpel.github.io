@@ -1,0 +1,159 @@
+/* General Reset */
+body {
+    margin: 0; /* Removes default margin around the page */
+    font-family: Arial, sans-serif; /* Sets a clean, readable font */
+    line-height: 1.6; /* Improves readability by spacing out lines */
+    color: #333; /* Sets the text color to a dark gray */
+    background-color: #f9f9f9; /* Sets a light gray background for the page */
+}
+
+/* Container to center content and limit its width */
+.container {
+    max-width: 1000px; /* Increased from 800px to give more space */
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds space inside the container */
+}
+
+/* Header section styles */
+header {
+    background: #4CAF50; /* Sets a green background for the header */
+    color: white; /* Sets the text color to white */
+    padding: 20px 0; /* Adds vertical padding */
+    text-align: center; /* Centers the text inside the header */
+}
+
+header h1 {
+    margin: 0; /* Removes default margin around the heading */
+    font-size: 2.5em; /* Sets the font size for the main title */
+}
+
+header .title {
+    font-size: 1.2em; /* Sets a smaller font size for the subtitle */
+    margin-top: 10px; /* Adds space above the subtitle */
+    font-weight: 300; /* Makes the subtitle text lighter */
+}
+
+header .contact-info {
+    margin-top: 10px;
+    font-size: 0.9em;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contact-icon {
+    color: white;
+    font-size: 1.1em;
+    transition: transform 0.2s;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact-icon:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    header .contact-info {
+        font-size: 0.8em;
+    }
+}
+
+/* Section styles for different CV sections */
+section {
+    margin: 20px 0; /* Adds space around sections */
+    padding: 20px; /* Adds space inside sections */
+    background: white; /* Sets a white background for sections */
+    border-radius: 8px; /* Rounds the corners of sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Heading styles for section titles */
+h2 {
+    color: #4CAF50; /* Sets the heading color to green */
+    border-bottom: 2px solid #4CAF50; /* Adds a green underline */
+    padding-bottom: 5px; /* Adds space below the text and underline */
+    margin-bottom: 15px; /* Adds space below the heading */
+}
+
+/* Styles for individual jobs and projects */
+.job, .project {
+    margin-bottom: 20px; /* Adds space below each job/project */
+}
+
+.job h3, .project h3 {
+    margin: 0; /* Removes default margin around headings */
+    font-size: 1.2em; /* Sets the font size for job/project titles */
+}
+
+/* Styles for company and project descriptions */
+.company {
+    font-size: 0.9em; /* Sets a smaller font size for company names */
+    color: #666; /* Sets a lighter gray color for company names */
+    margin-bottom: 10px; /* Adds space below the company name */
+}
+
+/* List styles for responsibilities and skills */
+ul {
+    padding-left: 20px; /* Adds indentation for list items */
+    list-style-type: disc; /* Uses a bullet point style */
+}
+
+ul li {
+    margin-bottom: 10px; /* Adds space below each list item */
+}
+
+/* Link styles for project links */
+.project a {
+    color: #4CAF50; /* Sets link color to green */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes the link text bold */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Underlines the link on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Centers text in the footer */
+    padding: 10px 0; /* Adds vertical padding */
+    background: #333; /* Sets a dark gray background for the footer */
+    color: white; /* Sets the text color to white */
+    font-size: 0.9em; /* Sets a smaller font size for footer text */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.2s, color 0.2s;
+    display: inline-block;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #e0e0e0;
+}
